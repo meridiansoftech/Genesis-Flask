@@ -1,0 +1,12 @@
+# Python
+*.pyc
+/venv/
+
+# Pycharm IDE
+.idea/
+
+# Node modules
+/node_modules/
+
+# Other
+TODO.*
