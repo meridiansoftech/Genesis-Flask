@@ -12,9 +12,9 @@ def hello_world():
     return 'Hello World!'
 
 # index template render route
-@app.route('/template')
-def template(name=None):
-    return render_template('tpl.index.html', name=name)
+@app.route('/html')
+def templates(name=None):
+    return render_template('index.html', name=name)
 
 # user profile route
 # @app.route('/user')
