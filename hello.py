@@ -2,13 +2,23 @@
 
 # Flask - a lightweight web/backend framework for Python lang
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
-# create an index page route
+# index page route
 @app.route('/')
 def hello_world():
     return 'Hello World!'
+
+# index template render route
+@app.route('/template')
+def template(name=None):
+    return render_template('tpl.index.html', name=name)
+
+# user profile route
+# @app.route('/user')
+# show_user()
 
 # run the flask-based app when '__main__' function/method is encountered
 if __name__ == '__main__':
