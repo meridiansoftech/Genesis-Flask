@@ -1,4 +1,4 @@
-# Flask Genesis
+# Genesis for Flask
 
 This is a starting point for building web applications using the Flask python framework.
 
