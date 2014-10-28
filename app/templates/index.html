@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->
+
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8" />
+		<meta name="keywords" content="app, keywords" />
+		<meta name="author" content="Author Name" />
+		<meta name="author_url" content="Author URL" />
+		<meta name="description" content="App description" />
+		<meta name="copyright" content="Copyright (c) YYYY. All rights reserved." />
+		<meta name="language" content="EN-GB" />
+
+		<!-- Mobile device metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+		<title>
+			{{ title }}
+		</title>
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+		<!-- Base CSS -->
+		<link rel="stylesheet" href="css/build/production.min.css" /><!-- Minified by Grunt -->
+  		
+  		<!-- Vendor CSS -->
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.6/css/normalize.min.css" type='text/css' />
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.6/css/foundation.min.css" type='text/css' />
+
+  		<!-- App CSS -->
+  		<link rel="stylesheet" href="css/app.css" />
+  		<link rel="stylesheet" href="css/hacks.css" />
+
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="favicon.ico" />
+
+		<!-- Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css'>
+
+		<!-- Google Analytics -->
+
+		<!-- Modernizr.js -->
+		<!-- <script src="js/vendor/modernizr.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+		<!-- custom styles (to be deleted) -->
+  		<style type="text/css" media="screen">
+  			/* Put in hacks.css file */
+  			grid {display: block;}
+  			h1, h2{font-family: 'Helvetica', sans-serif;}
+  			header hgroup h1{color: #7ea5e2;}
+            main h3 a{color: #C51;}
+
+            #copyright{font-size: 0.8em; font-family: "Book Antiqua", serif;}
+  		</style>
+	</head>
+
+	<body>
+
+		<header>
+			<grid class="row">
+				<grid class="large-12 columns text-center">
+					<hgroup>
+						<h1>Genesis for Flask</h1>
+						<h3 class="subheader">Start your flask web projects here :)</h3>
+					</hgroup>
+
+					<p></p>
+				</grid>
+			</grid>
+		</header>
+
+		<main>
+            <grid class="row">
+                <grid class="large-12 columns text-center">
+                    <hr><h3>What can you do with Flask on the Web?</h3><hr>
+                </grid>
+            </grid>
+			<grid class="row">
+                <grid class="large-4 columns">
+                    <article class="panel text-center">
+                        <h3><a href="todo">Cool task manager</a></h3>
+                    </article>
+                </grid>
+				<grid class="large-4 columns">
+					<article class="panel text-center">
+                        <h3><a href="/player">Beautiful music player</a></h3>
+                    </article>
+				</grid>
+                <grid class="large-4 columns">
+                    <article class="panel text-center">
+                        <h3><a href="editor">Elegant code editor</a></h3>
+                    </article>
+                </grid>
+			</grid>
+		</main>
+
+		<footer>
+			<grid class="row">
+				<grid class="large-12 columns text-center">
+					<hr>
+					<p id="copyright">Copyright &copy; 2014, <a href="http://choosealicense.com/licenses/mit/">Meridian Softech</a></p>
+				</grid>
+			</grid>
+		</footer>
+
+	</body>
+</html>
