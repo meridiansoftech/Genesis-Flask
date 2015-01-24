@@ -3,43 +3,8 @@ body #container {
 	margin: 0 auto;
 }
 
-body #container-40 {
-	width: 40%;
-	margin: 0 auto;
-}
+h1, h2{font-family: 'Helvetica', sans-serif;}
+header hgroup h1{color: #7ea5e2;}
+main h3 a{color: #C51;}
 
-body.app header.minibar .app-name {font-size: 1.7em;}
-body.app header.minibar .app-slogan {font-size: 1em;}
-
-.app-name {
-  	margin-bottom: 0;
-}
-
-.app-slogan {
-	color: #333;
-	font-family: "TakaoPGothic", sans-serif;
-}
-
-.app-name, .app-name a {
-	color: limegreen;
-	font-family: "TakaoPGothic", sans-serif;
-	text-decoration: none;
-}
-
-.app-name a:hover {
-	color: green;
-}
-
-.features ul li {
-
-}
-
-body.app main {
-	background: #eee; padding: 5px 0;
-}
-
-body.app main .page-title {margin: 20px 0;}
-
-footer ul li, footer p {
-	font-size: 0.8em;
-}
+#copyright{font-size: 0.8em; font-family: "Book Antiqua", serif;}

@@ -1,37 +1,62 @@
 <!doctype html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->
 <html class="no-js" lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="genesis, flask, boilerplate, python" />
+    <meta name="author" content="Meridian Softech Inc." />
+    <meta name="author_url" content="https://github.com/meridiansoftech" />
+    <meta name="description" content="A starting point for your flask web projects" />
+    <meta name="copyright" content="Copyright (c) 2015. All rights reserved." />
+    <meta name="language" content="EN-GB" />
+
+    <!-- Mobile device metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     {% if title %}
-    <title>{{ title }} &emdash; LocPay.io</title>
+    <title>{{ title }} &mdash; Genesis for Flask</title>
     {% else %}
-    <title>LocPay.io &emdash; Hassle-free billing for Developers</title>
+    <title>Genesis for Flask</title>
     {% endif %}
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css'>
 
     <!-- grid framework -->
     <link rel="stylesheet" href="{{ url_for('static/dev/vendor/foundation-5.5.0/css/foundation.css') }}">
-    {{ HTML::style('assets/dev/vendor/foundation-5.5.0/css/foundation.css') }}
 
     <!-- my css -->
-    {{ HTML::style('assets/dev/css/general.css') }}
-    {{ HTML::style('assets/dev/css/helpers.css') }}
-    {{ HTML::style('assets/dev/css/app.css') }}
+    <link rel="stylesheet" href="{{ url_for('static/dev/css/general.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static/dev/css/helpers.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static/dev/css/app.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static/dev/css/hacks.css') }}">
 
-    {{ HTML::script('assets/dev/vendor/foundation-5.5.0/js/vendor/modernizr.js') }}
+    <!-- Minified by Grunt -->
+    <!-- <link rel="stylesheet" href="css/build/production.min.css" /> -->
+
+    <script src="{{ url_for('static/dev/vendor/foundation-5.5.0/js/vendor/modernizr.js') }}" type="text/javascript"></script>
+
+    <!-- Google Analytics -->
+
   </head>
 
-  <body>
+  <body class="base">
 
-  <div id="container" class="app">
+  <div id="container">
 
     <header>
       <div class="row">
         <div class="large-12 small-12 columns">
           <hgroup>
-            <h1 id="app-name">LocPay.io</h1>
-            <h2 id="app-slogan">Hassle-free billing for Developers</h2>
+            <h1 id="app-name">Genesis for Flask</h1>
+            <h2 id="app-slogan">A starting point for your flask web projects</h2>
           </hgroup>
           <hr>
         </div>
@@ -67,18 +92,18 @@
           </ul>
         </div>
         <div class="large-6 columns text-right">
-          <p>Copyright &copy; {{ date('Y') }}</p>
+          <p>Copyright &copy; {{ date('Y') }}, <a href="http://choosealicense.com/licenses/mit/">Meridian Softech Inc.</a></p>
         </div>
       </div>
     </footer>
 
   </div>
 
-  {{ HTML::script('assets/dev/vendor/foundation-5.5.0/js/vendor/jquery.js') }}
-  {{ HTML::script('assets/dev/vendor/foundation-5.5.0/js/foundation.min.js') }}
+  <script src="{{ url_for('static/dev/vendor/foundation-5.5.0/js/vendor/jquery.js') }}" type="text/javascript"></script>
+  <script src="{{ url_for('static/dev/vendor/foundation-5.5.0/js/vendor/foundation.min.js') }}" type="text/javascript"></script>
   
   <script>
-  $(document).foundation();
+    $(document).foundation();
   </script>
 
   </body>
