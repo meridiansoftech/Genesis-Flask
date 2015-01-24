@@ -1,0 +1,17 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<div class="row">
+	<div class="large-12 columns text-center">
+		<h1>Welcome, {{ user.username }}!</h1>
+
+	  <h2>Enter the world of hassle-free billing for Developers</h2>
+
+	  {% for post in posts %}
+	  <div><p>{{ post.feature }} says: <b>{{ post.description }}</b></p></div>
+	  {% endfor %}
+	</div>
+</div>
+
+{% endblock %}

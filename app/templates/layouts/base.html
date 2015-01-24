@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    {% if title %}
+    <title>{{ title }} &emdash; LocPay.io</title>
+    {% else %}
+    <title>LocPay.io &emdash; Hassle-free billing for Developers</title>
+    {% endif %}
+
+    <!-- grid framework -->
+    <link rel="stylesheet" href="{{ url_for('static/dev/vendor/foundation-5.5.0/css/foundation.css') }}">
+    {{ HTML::style('assets/dev/vendor/foundation-5.5.0/css/foundation.css') }}
+
+    <!-- my css -->
+    {{ HTML::style('assets/dev/css/general.css') }}
+    {{ HTML::style('assets/dev/css/helpers.css') }}
+    {{ HTML::style('assets/dev/css/app.css') }}
+
+    {{ HTML::script('assets/dev/vendor/foundation-5.5.0/js/vendor/modernizr.js') }}
+  </head>
+
+  <body>
+
+  <div id="container" class="app">
+
+    <header>
+      <div class="row">
+        <div class="large-12 small-12 columns">
+          <hgroup>
+            <h1 id="app-name">LocPay.io</h1>
+            <h2 id="app-slogan">Hassle-free billing for Developers</h2>
+          </hgroup>
+          <hr>
+        </div>
+      </div>
+    </header>
+
+    <section id="flash-messages">
+      <div class="row">
+        <div class="large-6 small-12 columns centered">
+          {% with messages = get_flashed_messages() %}
+            {% if messages %}
+              <ul>
+              {% for message in messages %}
+                  <li>{{ message }} </li>
+              {% endfor %}
+              </ul>
+            {% endif %}
+          {% endwith %}
+        </div>
+      </div>
+    </section>
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+      <div class="row">
+        <div class="large-6 columns">
+          <ul class="inline-list">
+            <li><a href="{{ url_for('legal/terms') }}">Terms and Conditions</a></li>
+            <li><a href="{{ url_for('legal/privacy') }}">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="large-6 columns text-right">
+          <p>Copyright &copy; {{ date('Y') }}</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  {{ HTML::script('assets/dev/vendor/foundation-5.5.0/js/vendor/jquery.js') }}
+  {{ HTML::script('assets/dev/vendor/foundation-5.5.0/js/foundation.min.js') }}
+  
+  <script>
+  $(document).foundation();
+  </script>
+
+  </body>
+</html>
