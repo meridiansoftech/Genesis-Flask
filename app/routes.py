@@ -10,6 +10,14 @@ from .forms import LoginForm, SignupForm
 def welcome():
     return render_template('index.html', title='Welcome')
 
+@app.route('/legal/terms')
+def toc():
+    return render_template('toc.html', title='Terms and Conditions')
+
+@app.route('/legal/privacy')
+def privacy():
+    return render_template('privacy.html', title='Privacy Policy')
+
 @app.route('/todo')
 def todo_app():
     return render_template('task-manager.html')

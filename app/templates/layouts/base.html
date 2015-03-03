@@ -30,18 +30,18 @@
     <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,700' rel='stylesheet' type='text/css'>
 
     <!-- grid framework -->
-    <link rel="stylesheet" href="{{ url_for('static/dev/vendor/foundation-5.5.0/css/foundation.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dev/vendor/foundation-5.5.0/css/foundation.css') }}">
 
     <!-- my css -->
-    <link rel="stylesheet" href="{{ url_for('static/dev/css/general.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static/dev/css/helpers.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static/dev/css/app.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static/dev/css/hacks.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dev/css/general.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dev/css/helpers.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dev/css/app.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dev/css/hacks.css') }}">
 
     <!-- Minified by Grunt -->
     <!-- <link rel="stylesheet" href="css/build/production.min.css" /> -->
 
-    <script src="{{ url_for('static/dev/vendor/foundation-5.5.0/js/vendor/modernizr.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='dev/vendor/foundation-5.5.0/js/vendor/modernizr.js') }}" type="text/javascript"></script>
 
     <!-- Google Analytics -->
 
@@ -99,8 +99,8 @@
 
   </div>
 
-  <script src="{{ url_for('static/dev/vendor/foundation-5.5.0/js/vendor/jquery.js') }}" type="text/javascript"></script>
-  <script src="{{ url_for('static/dev/vendor/foundation-5.5.0/js/vendor/foundation.min.js') }}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='dev/vendor/foundation-5.5.0/js/vendor/jquery.js') }}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='dev/vendor/foundation-5.5.0/js/vendor/foundation.min.js') }}" type="text/javascript"></script>
 
   <script>
     $(document).foundation();
